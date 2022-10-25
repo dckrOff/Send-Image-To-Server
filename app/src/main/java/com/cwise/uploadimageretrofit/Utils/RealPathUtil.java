@@ -1,4 +1,4 @@
-package com.cwise.uploadimageretrofit;
+package com.cwise.uploadimageretrofit.Utils;
 
 import android.annotation.SuppressLint;
 import android.content.ContentUris;

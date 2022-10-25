@@ -1,4 +1,4 @@
-package com.cwise.uploadimageretrofit;
+package com.cwise.uploadimageretrofit.Model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

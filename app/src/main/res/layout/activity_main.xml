@@ -5,54 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
-    tools:context=".MainActivity">
+    tools:context=".Activitry.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher" />
+
+            <Button
+                android:id="@+id/select_image_from_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Select from gallery"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/select_image_from_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select from camera"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
 
         <Button
-            android:id="@+id/select_image"
-            android:layout_width="wrap_content"
+            android:id="@+id/save"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:text="Select Image" />
-
-        <ImageView
-            android:id="@+id/imageview"
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:scaleType="fitCenter"
-            android:src="@mipmap/ic_launcher" />
-    </LinearLayout>
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Enter Name" />
-
-    <EditText
-        android:id="@+id/reference"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Enter Reference" />
-
-    <Button
-        android:id="@+id/save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Save Record" />
+            android:layout_marginTop="50dp"
+            android:text="Save Record" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
